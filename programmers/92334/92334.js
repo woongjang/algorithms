@@ -1,3 +1,5 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/92334
+// 신고결과 받기
 function solution(id_list, report, k) {
   let answer = Array.from({ length: id_list.length }, (v) => 0);
   const uniqueArray = [...new Set(report)];
