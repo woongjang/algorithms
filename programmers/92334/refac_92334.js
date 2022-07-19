@@ -13,7 +13,7 @@ function solution(id_list, report, k) {
   reports.forEach((report) => {
     const [userId, targetId] = report;
     if (reportCounts.get(targetId) >= k) {
-      reportsMoreThanCount.set(userId, reportsMoreThanCount[userId] + 1 || 1);
+      reportsMoreThanCount.set(userId, reportsMoreThanCount.get(userId) + 1 || 1);
     }
   });
   const answer = id_list.map((id) => reportsMoreThanCount.get(id) || 0);
