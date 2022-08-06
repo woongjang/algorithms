@@ -20,3 +20,10 @@ const solution = (participants, completions) => {
   }
   return answer;
 };
+
+// 배열순회를 활용한 방법
+const solution2 = (participants, completions) =>
+  participants.find(
+    (name) => !completions[name]--,
+    completions.map((name) => (completions[name] = completions[name] | 0) + 1)
+  );
