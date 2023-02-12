@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/maximum-units-on-a-truck/ 
 function maximumUnits(boxTypes: number[][], truckSize: number): number {
   boxTypes.sort((a, b) => b[1] - a[1])
   let remainSpaces = truckSize;
