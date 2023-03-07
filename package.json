@@ -5,9 +5,13 @@
   "repository": "https://github.com/WoongJang/algorithms.git",
   "author": "WON <won.develop@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "run:test": "ts-node --esm scripts/run.ts"
+  },
   "dependencies": {
     "@types/node": "^18.11.18",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "enquirer": "^2.3.6"
   }
 }

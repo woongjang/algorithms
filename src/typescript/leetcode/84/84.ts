@@ -13,3 +13,5 @@ function largestRectangleArea(heights: number[]): number {
   })
   return res;
 };
+
+console.log(largestRectangleArea([1,2,3,4]))
